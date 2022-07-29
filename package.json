@@ -1,0 +1,28 @@
+{
+  "name": "50-projects",
+  "version": "1.0.0",
+  "description": "This repository contains 50 projects done with HTML, CSS and JavaScript",
+  "main": "app.js",
+  "scripts": {
+    "css-compile": "node-sass -r --output css/ scss/main.scss",
+    "css-watch": "npm run css-compile && npm run css-compile -- -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greit0n/50-projects.git"
+  },
+  "author": "Georgi Damyanov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/greit0n/50-projects/issues"
+  },
+  "homepage": "https://github.com/greit0n/50-projects#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.1",
+    "css-reset-and-normalize": "^2.3.6"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "node-sass": "^7.0.1"
+  }
+}
