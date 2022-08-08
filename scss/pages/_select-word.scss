@@ -1,0 +1,11 @@
+.bottom-box {
+  display: flex;
+
+  input {
+    all: unset;
+
+    &::placeholder {
+      color: black;
+    }
+  }
+}

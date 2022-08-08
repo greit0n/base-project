@@ -6,9 +6,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
     overflow: hidden;
-    color: white;
+    color: $default;
+    font-family: 'Helvetica Neue', sans-serif;
+    margin-top: 40px;
+}
+
+p {
+    font-size: $fs-small;
+    margin: 0;
+}
+
+h1 {
     margin: 0;
 }

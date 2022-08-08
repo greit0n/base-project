@@ -19,7 +19,9 @@
   "homepage": "https://github.com/greit0n/50-projects#readme",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.1.1",
-    "css-reset-and-normalize": "^2.3.6"
+    "crypto-js": "^4.1.1",
+    "css-reset-and-normalize": "^2.3.6",
+    "twig": "^1.15.4"
   },
   "devDependencies": {
     "live-server": "^1.2.2",

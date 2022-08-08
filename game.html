@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Master Mind</title>
+
+    <link rel="stylesheet" type="text/css" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js" integrity="sha512-wT7uPE7tOP6w4o28u1DN775jYjHQApdBnib5Pho4RB0Pgd9y7eSkAV1BTqQydupYDB9GBhTcQQzyNMPMV3cAew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="js/game.js" defer></script>
+</head>
+<body>
+<header>
+    <i class="fa-solid fa-masks-theater"></i>
+    <h1>Master Mind</h1>
+    <p>
+        Type a word </br>
+        Start guessing </br>
+        You win if you guess the word </br>
+        You loose if you have no more lives left </br>
+    </p>
+    <hr>
+</header>
+<main>
+    <img class="solid-brain" src="img/solid%20brain.svg">
+    <div class="container">
+        <div class="top-box">
+            <div class="difficulty-wrapper">Difficulty: <i id="difficulty" class="fa-solid"></i></div>
+            <div class="lives-wrapper">Lives: <span id="lives"></span></div>
+            <div class="guess-wrapper">Your last guess: <span id="lastGuess"></span></div>
+        </div>
+        <div class="bottom-box">
+            <div class="word-wrapper"></div>
+            <div class="used-letters"></div>
+            <a href="/" class="restart hidden">Restart</a>
+        </div>
+    </div>
+</main>
+
+<div class="modal hidden">
+    <div class="modal-background"></div>
+    <div class="modal-window">
+        <div class="header">
+            <i class="icon-left fa-solid"></i>
+            <i class="icon-right fa-solid fa-x"></i>
+        </div>
+        <div class="content">
+            <p class="text"></p>
+            <p>The word was: <span class="correct-word"></span></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

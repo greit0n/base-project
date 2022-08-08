@@ -1,16 +1,64 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"
-              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>My Project</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Master Mind</title>
 
-        <link rel="stylesheet" type="text/css" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <script src="js/main.js" defer></script>
-    </head>
-    <body>
-    </body>
+    <link rel="stylesheet" type="text/css" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js" integrity="sha512-wT7uPE7tOP6w4o28u1DN775jYjHQApdBnib5Pho4RB0Pgd9y7eSkAV1BTqQydupYDB9GBhTcQQzyNMPMV3cAew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <i class="fa-solid fa-masks-theater"></i>
+        <h1>Master Mind</h1>
+        <p>
+            Type a word </br>
+            Start guessing </br>
+            You win if you guess the word </br>
+            You loose if you have no more lives left </br>
+        </p>
+        <hr>
+    </header>
+    <main>
+        <img class="solid-brain" src="img/solid%20brain.svg">
+        <div class="container">
+            <div class="top-box">
+                <span>Difficulty</span>
+                <span>Lives</span>
+            </div>
+            <div class="bottom-box">
+                <div class="box"
+                    data-lives="7"
+                    data-icon-class-name="fa-face-laugh-beam"
+                    data-difficulty="easy">
+                    <span class="diff-lvl">Easy</span>
+                    <i class="fa-solid fa-face-laugh-beam"></i>
+                    <span class="lives">7</span>
+                </div>
+                <div class="box"
+                     data-lives="5"
+                     data-icon-class-name="fa-face-grimace"
+                     data-difficulty="med">
+                    <span class="diff-lvl">Med</span>
+                    <i class="fa-solid fa-face-grimace"></i>
+                    <span class="lives">5</span>
+                </div>
+                <div class="box"
+                     data-lives="3"
+                     data-icon-class-name="fa-face-sad-cry"
+                     data-difficulty="hard">
+                    <span class="diff-lvl">Hard</span>
+                    <i class="fa-solid fa-face-sad-cry"></i>
+                    <span class="lives">3</span>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
 </html>
